@@ -1,0 +1,1 @@
+A Starter kit for node-express with Typescript.
