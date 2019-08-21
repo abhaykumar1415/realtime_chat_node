@@ -1,0 +1,7 @@
+const secret = {
+	secretKey: '3tGq4WnUrb4zT0pslToGl-2qg8QnVtlVQ9gVQWtm4q6Ru2766kkJdV4fOH9egliLFpZlDO2QMUdYPPBxvX24FKEwYHdCIDfpLXyjuDHg1tzbz6wk2kLsWHJv1YqJVOTOouZbzQfACQr7lcfiSTLPmAG-d6UzD5shwXbiyRJeHAXAx35_rOpirjbDrS-04rYVc9JRu6uDqgGuKegWx53bCyoxiyEAgVT5gTLyCJ6C1E0FvHhnQIPQXWMqUrrxEuwxCd1IeYJaR4SkJR_tO2hYbIfOGRPt67eci_vCtSKXwNZoLLdY6mb5GuhWwHq2sRWq4lhCEE2L-hXx_tS3Xi1vZw',
+};
+
+const JWT_TOKEN = {secret};
+
+export default JWT_TOKEN;

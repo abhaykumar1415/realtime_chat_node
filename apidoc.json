@@ -1,0 +1,7 @@
+{
+  "name": "API-DOC",
+  "version": "0.0.1",
+  "description": "Api documentation for My-Project",
+  "title": "API Doc",
+  "url" : "http://localhost:3000/api"
+}
