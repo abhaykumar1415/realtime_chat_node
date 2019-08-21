@@ -1,6 +1,5 @@
 import UserController from '../controllers/Users';
 import { Router } from 'express';
-import Auth from "../services/JwtToken";
 /**
  * @export
  * @class UserRouter

@@ -1,8 +1,8 @@
 {
-    "name": "alt-news",
+    "name": "node-express-ts",
     "version": "1.0.0",
     "main": "./build/index.js",
-    "description": "Rest API for Alt News",
+    "description": "Starter kit for node-express-ts",
     "author": "Abhay Kumar <abhay.kumar@qed42.com>",
     "scripts": {
         "build": "./node_modules/.bin/webpack",

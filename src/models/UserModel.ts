@@ -11,27 +11,17 @@ export interface IUserModel extends Document {
     updatedAt ? : Date;
     name: string;
     email: string;
-    source: String;
-    preferredLanguage: String
 }
 
 const UserSchema: Schema = new Schema({
-    key: {
+    email: {
         type: String,
         required: true
     },
-    source: {
+    name: {
         type: String,
         required: true
     },
-    token: {
-        type: String
-    },
-    preferredLanguage: {
-      type: String,
-      default: 'en'
-    }
-
 }, {
     collection: 'User',
     versionKey: false,

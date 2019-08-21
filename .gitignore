@@ -48,3 +48,6 @@ typings/
 .next
 
 .DS_Store
+
+# Build Folder
+build
