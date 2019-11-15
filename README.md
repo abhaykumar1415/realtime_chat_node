@@ -13,7 +13,7 @@ Get started with **REST API development**  withing seconds.
  - Dummy cron job
  - Dummy controller, router, models configured.
  - Basic **JWT** setup.
- - Development and productions environment setup for easy of use
+ - Development and production environment setup for easy of use
 
 
     ```git clone https://github.com/abhaykumar1415/node-express-ts-starterkit.git```
