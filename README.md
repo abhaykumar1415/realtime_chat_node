@@ -4,6 +4,7 @@ Get started with **REST API development**  withing seconds.
  
 # Tech stack
  - NodeJs
+ - Express
  - TypeScript
  - MongoDB
 
