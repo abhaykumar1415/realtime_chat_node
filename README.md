@@ -16,7 +16,7 @@ Get started with **REST API development**  withing seconds.
  - Development and productions environment setup for easy of use
 
 
-### To get starter just clone the repo
+    git clone https://github.com/abhaykumar1415/node-express-ts-starterkit.git
 
 
 **PRs and issues are most welcome**
