@@ -9,11 +9,15 @@ interface IConnectOptions {
     reconnectTries: number; // Never stop trying to reconnect
     reconnectInterval: number;
     loggerLevel?: string;
+    useNewUrlParser: true;
+    useUnifiedTopology: true;
 }
 const connectOptions: IConnectOptions = {
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
-    reconnectInterval: 1000
+    reconnectInterval: 1000,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 };
 
 const MONGO_URI: string = `${config.envConfig.database.MONGODB_URI}${config.envConfig.database.MONGODB_DB_MAIN}`;
