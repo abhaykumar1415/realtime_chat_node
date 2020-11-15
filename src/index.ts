@@ -2,6 +2,7 @@ import * as debug from 'debug';
 import * as http from 'http';
 import Server from './server';
 import * as serverHandlers from './serverHandlers';
+import WebSockets from "./webSockets"
 
 debug('ts-express:server');
 
@@ -22,4 +23,7 @@ server.on(
     (error) => serverHandlers.onError(error, port));
 server.on(
     'listening',
-    serverHandlers.onListening.bind(server));
+    serverHandlers.onListening.bind(server))
+
+// Sockets
+server.on("listening", () => { WebSockets.init(server) })
