@@ -7,25 +7,17 @@ import { Schema, Document } from 'mongoose';
  * @extends {Document}
  */
 export interface IUserModel extends Document {
-    createdAt ? : Date;
-    updatedAt ? : Date;
+    createdAt?: Date;
+    updatedAt?: Date;
     name: string;
-    email: string;
 }
 
 const UserSchema: Schema = new Schema({
-    email: {
-        type: String,
-        required: true
-    },
-    name: {
-        type: String,
-        required: true
-    },
+    name: { type: String, required: true }
 }, {
     collection: 'User',
     versionKey: false,
     timestamps: true
 });
 
-export default connections.db.model < IUserModel >('UserModel', UserSchema);
+export default connections.db.model<IUserModel>('UserModel', UserSchema);

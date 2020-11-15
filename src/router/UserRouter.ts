@@ -17,5 +17,8 @@ export default class UserRouter {
      */
     public routes(): void {
         this.router.get('/', UserController.getAllUsers);
+        this.router.get('/:_id', UserController.getAllUsers);
+        this.router.get('/:_id', UserController.getUser);
+        this.router.get('/login/:name', UserController.getUser);
     }
 }

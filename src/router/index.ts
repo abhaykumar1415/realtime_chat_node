@@ -14,5 +14,7 @@ export default class Routes {
         server.app.use('/', router);
         server.app.use('/api/verify', Auth.verifyRequestAuth);
         server.app.use('/api/users', new UserRouter().router);
+        server.app.use('/api/users/login', new UserRouter().router);
+        
     }
 }
