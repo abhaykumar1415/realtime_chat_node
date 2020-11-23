@@ -10,10 +10,12 @@ export interface IUserModel extends Document {
     createdAt?: Date;
     updatedAt?: Date;
     name: string;
+    img: string;
 }
 
 const UserSchema: Schema = new Schema({
-    name: { type: String, required: true }
+    name: { type: String, required: true },
+    img: { type: String, required: true }
 }, {
     collection: 'User',
     versionKey: false,
