@@ -2,7 +2,7 @@ import * as debug from 'debug';
 import * as http from 'http';
 import Server from './server';
 import * as serverHandlers from './serverHandlers';
-import WebSockets from "./webSockets"
+import WebSockets from "./services/webSocketServer"
 
 debug('ts-express:server');
 

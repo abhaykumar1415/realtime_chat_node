@@ -1,3 +1,4 @@
+
 import * as http from 'http';
 import { v4 as uuid } from 'uuid';
 
@@ -34,7 +35,7 @@ export default class WebSockets {
                 console.log("server socket Connection closed")
             })
 
-            connection.on('message', function (message: { utf8Data: string; }) {
+            connection.on('message', function (message: { utf8Data: string; }) {                
                 let msgData = JSON.parse(message.utf8Data)
                 WebSockets.createPrivateChat(msgData)
 
