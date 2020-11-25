@@ -28,10 +28,10 @@ class UserController {
      *       "error": "UserNotFound"
      *     }
      */
-    public getAllUsers(req: express.Request, res: express.Response, next: express.NextFunction): void {        
+    public getAllUsers(req: express.Request, res: express.Response, next: express.NextFunction): void {
         if (req.params) {
             UserModel
-                .find({ _id: { $ne: req.params._id } })
+                .find({ _id: { $ne: req.params._id }, role: { $ne: req.params.role } })
                 .then((data) => {
                     return res.status(200).json({ data });
                 })

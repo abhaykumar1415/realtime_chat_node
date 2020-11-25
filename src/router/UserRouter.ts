@@ -20,5 +20,6 @@ export default class UserRouter {
         this.router.get('/:_id', UserController.getAllUsers);
         this.router.get('/:_id', UserController.getUser);
         this.router.get('/login/:name', UserController.getUser);
+        this.router.get('/:_id/:role', UserController.getAllUsers);
     }
 }

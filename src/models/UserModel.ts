@@ -11,11 +11,13 @@ export interface IUserModel extends Document {
     updatedAt?: Date;
     name: string;
     img: string;
+    role: string;
 }
 
 const UserSchema: Schema = new Schema({
     name: { type: String, required: true },
-    img: { type: String, required: true }
+    img: { type: String, required: true },
+    role: { type: String, required: true } // doctor or patient
 }, {
     collection: 'User',
     versionKey: false,
