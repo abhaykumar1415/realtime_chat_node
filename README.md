@@ -1,7 +1,9 @@
 # Real-Time Secure Chat Application using Web Sockets
- 
+ - The real-time implementation of this Chat application is done using Web Sockets development technique.
+ - For End-to-end Encryption, I have made use of the [Signal Protocol](https://github.com/signalapp/libsignal-protocol-javascript) at the client side. Refer the link mentioned below for the Client Application.
+
 ## Technology Stack
- - NodeJs
+ - NodeJS
  - Express
  - TypeScript
  - MongoDB
@@ -22,7 +24,7 @@
      }
  }
  ```
- - Sending and receiving of Messages from my Client application build in React
+ - Sending and Receiving of Messages to/from my [Client Application build in React](https://github.com/abhaykumar1415/realtime_chat_react)
  ```
  wsServer.on(‘request',request => {
     const connection = request.accept(null, request.origin);
@@ -44,9 +46,6 @@
  - Dummy controller, router, models configured.
  - Basic **JWT** setup.
  - Development and production environment setup for easy of use
-
-
-    ```git clone https://github.com/abhaykumar1415/node-express-ts-starterkit.git```
 
 ## Resources
  - [Writing WebSocket Servers](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
